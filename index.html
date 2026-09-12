@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aysha Nasrin | Backend & Frontend Developer | Freelancer | BCA Gold Medalist</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Aysha Nasrin - BCA Graduate, University Gold Medalist & Rank 1 holder, Backend & Frontend Developer specializing in Python, FastAPI, Flask, JavaScript, SQL, and Web Development. Available for freelance & full-time roles.">
+    <meta name="keywords" content="Aysha Nasrin, Developer Portfolio, Backend Developer, Frontend Developer, Python Developer, FastAPI, Flask, Freelancer, BCA Gold Medalist, Web Developer, Full-Stack Developer">
+    <meta name="author" content="Aysha Nasrin">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ayshanasrin.dev/">
+    <meta property="og:title" content="Aysha Nasrin | Developer Portfolio | Gold Medalist">
+    <meta property="og:description" content="Premium Developer Portfolio of Aysha Nasrin - Backend & Frontend Specialist, BCA Gold Medalist (Rank 1, CGPA 8.5). Discover projects, services, and technical expertise.">
+    <meta property="og:image" content="assets/images/aysha_profile.jpg">
+
+    <!-- Twitter Meta -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Aysha Nasrin | Developer Portfolio">
+    <meta property="twitter:description" content="Backend & Frontend Developer | BCA Gold Medalist Rank 1 | Python, FastAPI, Web Development Specialist.">
+    <meta property="twitter:image" content="assets/images/aysha_profile.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Preloader Screen -->
+    <div class="preloader" id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">AN<span class="accent-dot">.</span></div>
+            <div class="loader-bar-container">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+            <div class="loader-text">Loading Experience... <span id="loaderPercent">0%</span></div>
+        </div>
+    </div>
+
+    <!-- Background Ambient Glow Effects -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Header & Sticky Navbar -->
+    <header class="navbar-header" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Aysha Nasrin Portfolio Home">
+                <span class="logo-text">Aysha<span class="logo-accent">.dev</span></span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link"><span class="nav-num">01.</span> About</a></li>
+                    <li><a href="#education" class="nav-link"><span class="nav-num">02.</span> Education</a></li>
+                    <li><a href="#skills" class="nav-link"><span class="nav-num">03.</span> Skills</a></li>
+                    <li><a href="#projects" class="nav-link"><span class="nav-num">04.</span> Projects</a></li>
+                    <li><a href="#services" class="nav-link"><span class="nav-num">05.</span> Services</a></li>
+                    <li><a href="#experience" class="nav-link"><span class="nav-num">06.</span> Journey</a></li>
+                    <li><a href="#contact" class="nav-link"><span class="nav-num">07.</span> Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn btn-sm btn-outline-accent open-resume-btn">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle Mobile Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <div class="badge-group">
+                        <span class="status-badge pulse">
+                            <span class="status-dot"></span> Available for Hire & Freelance
+                        </span>
+                        <span class="gold-badge">
+                            <i class="fa-solid fa-award"></i> BCA Rank 1 Gold Medalist
+                        </span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Hi, I'm</span>
+                        <span class="name-highlight">Aysha Nasrin</span>
+                    </h1>
+
+                    <div class="typing-container">
+                        <span class="typing-prefix">I am a</span>
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="typing-cursor">|</span>
+                    </div>
+
+                    <p class="hero-bio">
+                        Passionate Software Developer & University Gold Medalist crafting high-performance backend systems, 
+                        responsive web interfaces, and scalable digital solutions with elegant, maintainable code.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#contact" class="btn btn-primary btn-lg">
+                            <span>Hire Me</span> <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary btn-lg">
+                            <span>View Projects</span> <i class="fa-solid fa-arrow-down"></i>
+                        </a>
+                        <button class="btn btn-outline btn-lg open-resume-btn">
+                            <i class="fa-solid fa-file-pdf"></i> <span>Resume</span>
+                        </button>
+                    </div>
+
+                    <div class="hero-tech-pills">
+                        <span class="pill-label">Core Stack:</span>
+                        <div class="pill-tags">
+                            <span class="pill"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="pill"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+                            <span class="pill"><i class="fa-solid fa-flask"></i> Flask</span>
+                            <span class="pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="pill"><i class="fa-solid fa-database"></i> MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Interactive Visual Card -->
+                <div class="hero-visual reveal">
+                    <div class="visual-card-wrapper">
+                        <div class="avatar-glow-ring"></div>
+                        <div class="avatar-card glass-card">
+                            <img src="assets/images/aysha_profile.jpg" alt="Aysha Nasrin Developer Portrait" class="hero-avatar-img">
+                            
+                            <div class="floating-badge badge-top-right glass-card">
+                                <div class="badge-icon gold-icon"><i class="fa-solid fa-medal"></i></div>
+                                <div class="badge-text">
+                                    <span class="badge-title">CGPA 8.5</span>
+                                    <span class="badge-sub">University Rank 1</span>
+                                </div>
+                            </div>
+
+                            <div class="floating-badge badge-bottom-left glass-card">
+                                <div class="badge-icon green-icon"><i class="fa-solid fa-code"></i></div>
+                                <div class="badge-text">
+                                    <span class="badge-title">10+ Projects</span>
+                                    <span class="badge-sub">Completed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Code Preview Window -->
+                        <div class="hero-code-window glass-card">
+                            <div class="window-header">
+                                <div class="window-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="window-title">aysha_dev.py</span>
+                            </div>
+                            <div class="window-body">
+                                <pre><code><span class="code-keyword">from</span> fastapi <span class="code-keyword">import</span> FastAPI
+
+app = FastAPI(title=<span class="code-string">"Aysha API"</span>)
+
+<span class="code-decorator">@app.get</span>(<span class="code-string">"/developer"</span>)
+<span class="code-keyword">def</span> <span class="code-func">get_profile</span>():
+    <span class="code-keyword">return</span> {
+        <span class="code-string">"name"</span>: <span class="code-string">"Aysha Nasrin"</span>,
+        <span class="code-string">"degree"</span>: <span class="code-string">"BCA Gold Medalist"</span>,
+        <span class="code-string">"status"</span>: <span class="code-string">"Ready to Build"</span>
+    }</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <a href="#about" class="scroll-down-btn" aria-label="Scroll Down to About Section">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </section>
+
+
+        <!-- ABOUT ME SECTION -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle"><span class="subtitle-num">01.</span> DISCOVER MY STORY</span>
+                    <h2 class="section-title">Driven by Logic, Fueled by Innovation</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text-content reveal">
+                        <h3 class="about-heading">
+                            Hello! I'm <span class="text-accent">Aysha Nasrin</span>, a passionate Backend & Frontend Developer.
+                        </h3>
+                        <p class="about-para">
+                            I hold a <strong>Bachelor of Computer Applications (BCA)</strong> degree where I graduated as the 
+                            <strong>University Rank 1 Gold Medalist with a CGPA of 8.5/10</strong>. My academic journey has given me 
+                            a rock-solid foundation in computer science principles, database systems, and software engineering.
+                        </p>
+                        <p class="about-para">
+                            Specializing in <strong>Python, FastAPI, Flask, JSON, JavaScript, SQL, and Modern Web Architecture</strong>, 
+                            I bridge the gap between robust backend server logic and sleek, intuitive user interfaces. 
+                            Whether it's building AI-driven chatbots, designing REST APIs, or crafting responsive web platforms, 
+                            I prioritize clean code, performance optimization, and seamless user experiences.
+                        </p>
+
+                        <!-- Key Pillars Grid -->
+                        <div class="pillars-grid">
+                            <div class="pillar-card glass-card">
+                                <i class="fa-solid fa-server pillar-icon"></i>
+                                <h4>Backend Architecture</h4>
+                                <p>Building fast, secure RESTful APIs with Python & FastAPI.</p>
+                            </div>
+                            <div class="pillar-card glass-card">
+                                <i class="fa-solid fa-laptop-code pillar-icon"></i>
+                                <h4>Frontend Precision</h4>
+                                <p>Responsive, accessible & pixel-perfect UI development.</p>
+                            </div>
+                            <div class="pillar-card glass-card">
+                                <i class="fa-solid fa-database pillar-icon"></i>
+                                <h4>Database Design</h4>
+                                <p>Structured MySQL & SQL query optimization.</p>
+                            </div>
+                            <div class="pillar-card glass-card">
+                                <i class="fa-solid fa-lightbulb pillar-icon"></i>
+                                <h4>Problem Solving</h4>
+                                <p>Analytical mindset backed by Gold Medal distinction.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Statistics & Highlights Column -->
+                    <div class="about-stats-wrapper reveal">
+                        <div class="stats-card glass-card text-center">
+                            <div class="stat-item">
+                                <div class="stat-number-wrapper">
+                                    <span class="stat-number" data-target="8.5" data-decimal="1">0.0</span>
+                                </div>
+                                <span class="stat-label">CGPA (Out of 10)</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number-wrapper">
+                                    <span class="stat-prefix">#</span><span class="stat-number" data-target="1">0</span>
+                                </div>
+                                <span class="stat-label">University Rank 1</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number-wrapper">
+                                    <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+                                </div>
+                                <span class="stat-label">Projects Built</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                        </div>
+
+                        <!-- Quick Info Sheet -->
+                        <div class="info-sheet glass-card">
+                            <ul class="info-list">
+                                <li>
+                                    <span class="info-key"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                                    <span class="info-value">BCA (Bachelor of Computer Applications)</span>
+                                </li>
+                                <li>
+                                    <span class="info-key"><i class="fa-solid fa-trophy"></i> Rank:</span>
+                                    <span class="info-value text-accent">Rank 1 Gold Medalist</span>
+                                </li>
+                                <li>
+                                    <span class="info-key"><i class="fa-solid fa-globe"></i> Location:</span>
+                                    <span class="info-value">India (Available Remote Worldwide)</span>
+                                </li>
+                                <li>
+                                    <span class="info-key"><i class="fa-solid fa-envelope"></i> Email:</span>
+                                    <span class="info-value">ayshanasrin2606@gmail.com</span>
+                                </li>
+                                <li>
+                                    <span class="info-key"><i class="fa-solid fa-briefcase"></i> Availability:</span>
+                                    <span class="info-value text-green"><i class="fa-solid fa-circle-check"></i> Open to Roles & Freelance</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EDUCATION SECTION -->
+        <section class="section education-section" id="education">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle"><span class="subtitle-num">02.</span> ACADEMIC EXCELLENCE</span>
+                    <h2 class="section-title">Education & Achievements</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="education-card-wrapper reveal">
+                    <div class="education-card glass-card">
+                        <div class="edu-badge-header">
+                            <span class="edu-year"><i class="fa-regular fa-calendar"></i> Graduated 2026</span>
+                            <span class="gold-pill"><i class="fa-solid fa-crown"></i> Rank 1 Batch Topper</span>
+                        </div>
+
+                        <div class="edu-main-content">
+                            <div class="edu-icon-box">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div class="edu-details">
+                                <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
+                                <p class="edu-institution"><i class="fa-solid fa-building-columns"></i> University Degree Program</p>
+
+                                <div class="edu-metrics-row">
+                                    <div class="metric-badge gold-bg">
+                                        <i class="fa-solid fa-award"></i>
+                                        <div>
+                                            <span class="metric-title">Gold Medalist</span>
+                                            <span class="metric-sub">Highest Honor</span>
+                                        </div>
+                                    </div>
+                                    <div class="metric-badge accent-bg">
+                                        <i class="fa-solid fa-star"></i>
+                                        <div>
+                                            <span class="metric-title">CGPA 8.5 / 10.0</span>
+                                            <span class="metric-sub">Academic Excellence</span>
+                                        </div>
+                                    </div>
+                                    <div class="metric-badge dark-bg">
+                                        <i class="fa-solid fa-trophy"></i>
+                                        <div>
+                                            <span class="metric-title">University Rank 1</span>
+                                            <span class="metric-sub">First Class Distinction</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="edu-coursework">
+                                    <h4><i class="fa-solid fa-book-open"></i> Key Coursework & Focus Areas:</h4>
+                                    <div class="course-tags">
+                                        <span>Data Structures & Algorithms</span>
+                                        <span>Object-Oriented Python</span>
+                                        <span>Database Management Systems (MySQL)</span>
+                                        <span>Web Architecture & HTTP</span>
+                                        <span>Software Engineering & Testing</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+        <section class="section certs-section">
+            <div class="container">
+                <div class="grid-2-col">
+
+                    <!-- Certifications Column -->
+                    <div class="reveal">
+                        <div class="section-header">
+                            <span class="section-subtitle"><span class="subtitle-num"></span> CREDENTIALS</span>
+                            <h2 class="section-title">Certifications</h2>
+                            <div class="title-underline"></div>
+                        </div>
+
+                        <div class="certs-list">
+                            <div class="cert-item glass-card">
+                                <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+                                <div class="cert-info">
+                                    <h4>Object Oriented Programming for Python - Infosys </h4>
+                                    <p>Comprehensive Python Architecture, Data Structures & OOPs Concept</p>
+                                    <span class="cert-meta"><i class="fa-solid fa-certificate"></i> Verified Certification</span>
+                                </div>
+                            </div>
+
+                            <div class="cert-item glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+                                <div class="cert-info">
+                                    <h4>HTML Web Development - Sololearn</h4>
+                                    <p>Modern HTML5 & Web Standards</p>
+                                    <span class="cert-meta"><i class="fa-solid fa-certificate"></i> Verified Certification</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements Column -->
+                    <div class="reveal">
+                        <div class="section-header">
+                            <span class="section-subtitle"><span class="subtitle-num"></span> RECOGNITION</span>
+                            <h2 class="section-title">Key Achievements</h2>
+                            <div class="title-underline"></div>
+                        </div>
+
+                        <div class="achieve-list">
+                            <div class="achieve-item glass-card gold-border">
+                                <div class="achieve-icon"><i class="fa-solid fa-award"></i></div>
+                                <div class="achieve-info">
+                                    <h4>University Gold Medalist</h4>
+                                    <p>Awarded the prestigious Gold Medal for achieving highest academic distinction across the entire BCA program.</p>
+                                </div>
+                            </div>
+
+                            <div class="achieve-item glass-card gold-border">
+                                <div class="achieve-icon"><i class="fa-solid fa-crown"></i></div>
+                                <div class="achieve-info">
+                                    <h4>University Rank 1 Holder</h4>
+                                    <p>Secured 1st Rank in the graduating computer applications batch with an outstanding CGPA of 8.5/10.</p>
+                                </div>
+                            </div>
+
+                            <div class="achieve-item glass-card gold-border">
+                                <div class="achieve-icon"><i class="fa-solid fa-star"></i></div>
+                                <div class="achieve-info">
+                                    <h4>Class Representative</h4>
+                                    <p>Served as primary liaison between 80+ students and faculty for three consecutive years (Leadership & Communication)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS SECTION -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle"><span class="subtitle-num">03.</span> MY TOOLKIT</span>
+                    <h2 class="section-title">Technical Skills & Expertise</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid reveal">
+                    
+                    <!-- Skill Category 1: Languages & Backend -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <div class="cat-icon"><i class="fa-solid fa-server"></i></div>
+                            <h3>Languages & Backend</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-python skill-brand"></i> Python</span>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-bolt skill-brand"></i> FastAPI</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-flask skill-brand"></i> Flask</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-database skill-brand"></i> SQL / MySQL</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Category 2: Frontend Engineering -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <div class="cat-icon"><i class="fa-solid fa-code"></i></div>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-html5 skill-brand"></i> HTML5</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-css3-alt skill-brand"></i> CSS3 / Modern Styling</span>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-js skill-brand"></i> Vanilla JavaScript (ES6+)</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-mobile-screen skill-brand"></i> Responsive Design</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Category 3: Tools & Ecosystem -->
+                    <div class="skill-category-card glass-card">
+                        <div class="category-header">
+                            <div class="cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <h3>Tools & Workflow</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-git-alt skill-brand"></i> Git & GitHub</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-code skill-brand"></i> VS Code</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+                            </div>
+                        
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-palette skill-brand"></i> Canva Design</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FEATURED PROJECTS SECTION -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle"><span class="subtitle-num">04.</span> PORTFOLIO SHOWCASE</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-desc">Explore a curated selection of full-stack web applications, APIs, and responsive websites.</p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="filter-controls reveal">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="fullstack">Full-Stack & Backend</button>
+                    <button class="filter-btn" data-filter="landing">Landing Pages & Store</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid reveal" id="projectsGrid">
+
+                <!-- Project 1: AI Chatbot -->
+                <div class="project-card glass-card" data-category="fullstack">
+                    <div class="project-image-box">
+                        <div class="project-overlay">
+                            <button class="btn-icon open-project-modal" data-project="1" aria-label="View Project Details">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                        <div class="project-type-badge"><i class="fa-solid fa-robot"></i> Frontend & Backend</div>
+                        <div class="project-mock-graphic graphic-ai">
+                            <i class="fa-solid fa-brain mock-icon"></i>
+                            <span>AI Chatbot System</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Chatbot for College Management</h3>
+                        <p class="project-desc">
+                            A Flask and MySQL-based student chatbot that provides automated responses and secure user authentication. 
+                            Includes persistent chat history and an admin dashboard for managing chatbot responses and usage data.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>JavaScript</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-primary open-project-modal" data-project="1">
+                                View Details <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: TaskFlow -->
+                <div class="project-card glass-card" data-category="fullstack">
+                    <div class="project-image-box">
+                        <div class="project-overlay">
+                            <button class="btn-icon open-project-modal" data-project="2" aria-label="View Project Details">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                        <div class="project-type-badge"><i class="fa-solid fa-list-check"></i> Web App</div>
+                        <div class="project-mock-graphic graphic-task">
+                            <i class="fa-solid fa-layer-group mock-icon"></i>
+                            <span>TaskFlow Dashboard</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">TaskFlow Productivity Platform</h3>
+                        <p class="project-desc">
+                            A full-stack task management application built with FastAPI, React, MySQL, and SQLAlchemy. 
+                            Features JWT authentication, CRUD operations, task filtering, pagination, priority management, 
+                            due-date tracking, Swagger API documentation, and Pytest testing.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>SQLAlchemy</span>
+                            <span>JWT Authentication</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-primary open-project-modal" data-project="2">
+                                View Details <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Student Management System -->
+                <div class="project-card glass-card" data-category="fullstack">
+                    <div class="project-image-box">
+                        <div class="project-overlay">
+                            <button class="btn-icon open-project-modal" data-project="3" aria-label="View Project Details">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                        <div class="project-type-badge"><i class="fa-solid fa-graduation-cap"></i> Web App</div>
+                        <div class="project-mock-graphic graphic-anime">
+                            <i class="fa-solid fa-user-graduate mock-icon"></i>
+                            <span>Student Management</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Student Management System</h3>
+                        <p class="project-desc">
+                            A Flask and MySQL-based web application for managing student records with complete CRUD operations, 
+                            search functionality, Bootstrap UI, and real-time user feedback using flash messages.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-primary open-project-modal" data-project="3">
+                                View Details <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: AnimeWear -->
+                <div class="project-card glass-card" data-category="landing">
+                    <div class="project-image-box">
+                        <div class="project-overlay">
+                            <button class="btn-icon open-project-modal" data-project="4" aria-label="View Project Details">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                        <div class="project-type-badge"><i class="fa-solid fa-cart-shopping"></i> E-Commerce</div>
+                        <div class="project-mock-graphic graphic-portfolio">
+                            <i class="fa-solid fa-store mock-icon"></i>
+                            <span>Anime E-Store</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AnimeWear – Premium Anime Fashion Store</h3>
+                        <p class="project-desc">
+                            A modern responsive e-commerce website built with Next.js, TypeScript, Tailwind CSS, and Framer Motion, 
+                            featuring product categories, shopping cart, wishlist, responsive navigation, and smooth animations.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>Framer Motion</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-primary open-project-modal" data-project="4">
+                                View Details <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Speech Assistant -->
+                <div class="project-card glass-card" data-category="fullstack">
+                    <div class="project-image-box">
+                        <div class="project-overlay">
+                            <button class="btn-icon open-project-modal" data-project="5" aria-label="View Project Details">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                        <div class="project-type-badge"><i class="fa-solid fa-microphone"></i> Python Project</div>
+                        <div class="project-mock-graphic graphic-business">
+                            <i class="fa-solid fa-headset mock-icon"></i>
+                            <span>Speech Assistant</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Speech Assistant</h3>
+                        <p class="project-desc">
+                            A Python-based voice assistant that uses speech recognition and text-to-speech to interact with users 
+                            through voice commands, with optional GUI support and basic command execution.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span>Python</span>
+                            <span>Speech Recognition</span>
+                            <span>Text-to-Speech</span>
+                            <span>Tkinter</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-primary open-project-modal" data-project="5">
+                                View Details <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Poll Editor -->
+                <div class="project-card glass-card" data-category="fullstack">
+                    <div class="project-image-box">
+                        <div class="project-overlay">
+                            <button class="btn-icon open-project-modal" data-project="6" aria-label="View Project Details">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </button>
+                        </div>
+                        <div class="project-type-badge"><i class="fa-solid fa-square-poll-vertical"></i> Django App</div>
+                        <div class="project-mock-graphic graphic-landing">
+                            <i class="fa-solid fa-chart-simple mock-icon"></i>
+                            <span>Poll Editor</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Poll Editor - Django Project</h3>
+                        <p class="project-desc">
+                            A Django-based polling application where users can view polls, vote for choices, and see results. 
+                            Includes Django ORM, template inheritance, Bootstrap UI, and an admin dashboard for managing polls.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>SQLite3</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-sm btn-primary open-project-modal" data-project="6">
+                                View Details <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+<!-- FREELANCE SERVICES SECTION -->
+<section class="section services-section" id="services">
+    <div class="container">
+        <div class="section-header text-center reveal">
+            <span class="section-subtitle">05.Services</span>
+            <h2 class="section-title">Tailored Digital Solutions</h2>
+            <div class="title-underline"></div>
+            <p class="section-desc">Complete digital development and design services built to scale your business and bring ideas to life.</p>
+        </div>
+
+        <div class="services-grid reveal">
+            
+            <!-- Service 1: Website Design -->
+            <div class="service-card glass-card">
+                <div class="service-icon-wrapper">
+                    <i class="fa-solid fa-desktop service-icon"></i>
+                </div>
+                <h3>Website Design</h3>
+                <p>
+                    Complete conceptual UX strategy and visual layouts designed to position your brand as a market leader with modern aesthetics and user-centered design.
+                </p>
+                <ul class="service-list">
+                    <li><i class="fa-solid fa-check text-accent"></i> Custom layouts in Figma</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Interactive Prototype links</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Visual Assets and Typography</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> 3 Major Revision rounds</li>
+                </ul>
+                <button class="btn btn-sm btn-outline request-service-btn" data-service="Website Design">
+                    Get Started <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Service 2: Frontend Development -->
+            <div class="service-card glass-card">
+                <div class="service-icon-wrapper">
+                    <i class="fa-solid fa-code service-icon"></i>
+                </div>
+                <h3>Frontend Development</h3>
+                <p>
+                    Transforming design concepts into standard-compliant, interactive, and responsive web systems with optimal performance and beautiful animations.
+                </p>
+                <ul class="service-list">
+                    <li><i class="fa-solid fa-check text-accent"></i> Semantic HTML5 & Vanilla CSS3/JS</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Highly Optimized animations</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Cross-Browser Compatibility</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Perfect PageSpeed Scores</li>
+                </ul>
+                <button class="btn btn-sm btn-outline request-service-btn" data-service="Frontend Development">
+                    Get Started <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Service 3: Landing Pages -->
+            <div class="service-card glass-card">
+                <div class="service-icon-wrapper">
+                    <i class="fa-solid fa-file-lines service-icon"></i>
+                </div>
+                <h3>Landing Pages</h3>
+                <p>
+                    Conversion-focused marketing landing pages structured to convert digital traffic into qualified sales inquiries with persuasive design and CTAs.
+                </p>
+                <ul class="service-list">
+                    <li><i class="fa-solid fa-check text-accent"></i> Persuasive layout structuring</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Call-to-action optimizations</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Fast page loading configuration</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Integrated contact collection</li>
+                </ul>
+                <button class="btn btn-sm btn-outline request-service-btn" data-service="Landing Pages">
+                    Get Started <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Service 4: Portfolio Websites -->
+            <div class="service-card glass-card">
+                <div class="service-icon-wrapper">
+                    <i class="fa-solid fa-user service-icon"></i>
+                </div>
+                <h3>Portfolio Websites</h3>
+                <p>
+                    Tailor-made personal galleries displaying your expertise, skills, and projects with elite design aesthetics and smooth interactive elements.
+                </p>
+                <ul class="service-list">
+                    <li><i class="fa-solid fa-check text-accent"></i> Premium animated scroll mechanics</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Optimized layout structure</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Interactive showcase elements</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Social & Email integrations</li>
+                </ul>
+                <button class="btn btn-sm btn-outline request-service-btn" data-service="Portfolio Websites">
+                    Get Started <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Service 5: Business Websites -->
+            <div class="service-card glass-card">
+                <div class="service-icon-wrapper">
+                    <i class="fa-solid fa-building service-icon"></i>
+                </div>
+                <h3>Business Websites</h3>
+                <p>
+                    High-quality, multiple-page portals introducing your company profile, services, and corporate achievements with professional branding integration.
+                </p>
+                <ul class="service-list">
+                    <li><i class="fa-solid fa-check text-accent"></i> Responsive grid system</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> CMS-ready file structures</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> SEO integration</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Interactive contact panels</li>
+                </ul>
+                <button class="btn btn-sm btn-outline request-service-btn" data-service="Business Websites">
+                    Get Started <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <!-- Service 6: Canva Designs -->
+            <div class="service-card glass-card">
+                <div class="service-icon-wrapper">
+                    <i class="fa-solid fa-palette service-icon"></i>
+                </div>
+                <h3>Canva Designs</h3>
+                <p>
+                    Flexible, high-quality, reusable design assets developed in Canva for fast internal brand modifications and consistent professional branding.
+                </p>
+                <ul class="service-list">
+                    <li><i class="fa-solid fa-check text-accent"></i> Fully editable design templates</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Brand style guide integration</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> High-resolution exports</li>
+                    <li><i class="fa-solid fa-check text-accent"></i> Organized asset grouping</li>
+                </ul>
+                <button class="btn btn-sm btn-outline request-service-btn" data-service="Canva Designs">
+                    Get Started <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <!-- EXPERIENCE / JOURNEY TIMELINE -->
+        <section class="section journey-section" id="experience">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle"><span class="subtitle-num">06.</span> CAREER PATH</span>
+                    <h2 class="section-title">Experience & Journey Timeline</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="timeline reveal">
+                    <div class="timeline-line"></div>
+
+                    <!-- Milestone 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2026 - Present</span>
+                            <h3>Freelance website Developer</h3>
+                            <span class="timeline-role text-accent">Self-Employed / Remote</span>
+                            <p>
+                                Developing custom REST APIs, creating responsive client portfolio & 
+                                e-commerce sites, and offering consulting on database architecture.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i> 2023 - 2026</span>
+                            <h3>Bachelor of Computer Applications (BCA)</h3>
+                            <span class="timeline-role text-accent">Graduated Rank 1 Gold Medalist</span>
+                            <p>
+                                Mastered computer science fundamentals, data structures, relational databases, and web technologies. 
+                                Graduated as University Rank 1 Gold Medalist with CGPA 8.5/10.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONTACT FORM SECTION -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header text-center reveal">
+                    <span class="section-subtitle"><span class="subtitle-num">07.</span> GET IN TOUCH</span>
+                    <h2 class="section-title">Let's Build Something Great</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-desc">Have a project in mind, a freelance inquiry, or a full-time role? I'd love to connect!</p>
+                </div>
+
+                <div class="contact-grid">
+                    
+                    <!-- Contact Details Sheet -->
+                    <div class="contact-info-card glass-card reveal">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out via email or through the contact form. I typically respond within 24 hours.</p>
+
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="method-label">Direct Email</span>
+                                    <a href="mailto:ayshanasrin2606@gmail.com" class="method-value">ayshanasrin2606@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="method-label">Location</span>
+                                    <span class="method-value">India (Open for Worldwide Remote Work)</span>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div>
+                                    <span class="method-label">Response Time</span>
+                                    <span class="method-value">Within 24 Hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-wrapper">
+                            <span>Connect on Social:</span>
+                            <div class="social-icons">
+                                <a href="https://github.com/aysha-nasrin26" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/aysha-nasrin-a5a5b32b0/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="mailto:ayshanasrin2606@gmail.com" aria-label="Email Me"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card glass-card reveal">
+                        <form id="contactForm" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="userName">Full Name <span class="required">*</span></label>
+                                    <input type="text" id="userName" name="name" placeholder="John Doe" required>
+                                    <span class="error-msg" id="nameError">Please enter your name</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="userEmail">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="userEmail" name="email" placeholder="john@example.com" required>
+                                    <span class="error-msg" id="emailError">Please enter a valid email</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userSubject">Project / Service Request <span class="required">*</span></label>
+                                <select id="userSubject" name="subject" required>
+                                    <option value="" disabled selected>Select Inquiry Type...</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                    <option value="Backend & API Development">Website Development</option>
+                                    <option value="Full-Stack Web Development">Frontend Development</option>
+                                    <option value="Frontend UI/UX Engineering">Landing Page</option>
+                                    <option value="Business & E-Commerce Websites">Portfolio Websites</option>
+                                    <option value="Full-Time Role Opportunity">Canva Design</option>
+                                </select>
+                                <span class="error-msg" id="subjectError">Please select a subject</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userMessage">Your Message <span class="required">*</span></label>
+                                <textarea id="userMessage" name="message" rows="5" placeholder="Tell me about your project goals, timelines, or questions..." required></textarea>
+                                <span class="error-msg" id="messageError">Please enter a message</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn">
+                                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<footer class="footer">
+    <div class="container">
+        <!-- Footer Top Section -->
+        <div class="footer-top">
+            <!-- Brand Section -->
+            <div class="footer-brand">
+                <a href="#hero" class="footer-logo">Aysha<span class="logo-accent">.dev</span></a>
+                <p class="footer-tagline">BCA Gold Medalist Rank 1 | Backend & Frontend Software Developer</p>
+                <p class="footer-description">Building scalable web applications and digital solutions with Python, FastAPI, React, and modern web technologies.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h4 class="footer-section-title">Quick Links</h4>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#services">Services</a>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="footer-section">
+                <h4 class="footer-section-title">Services</h4>
+                <div class="footer-links">
+                    <a href="#services">Backend Development</a>
+                    <a href="#services">Full-Stack Web</a>
+                    <a href="#services">Frontend Design</a>
+                    <a href="#services">Landing Pages</a>
+                    <a href="#services">Portfolio Sites</a>
+                    <a href="#services">Canva Designs</a>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section">
+                <h4 class="footer-section-title">Get In Touch</h4>
+                <div class="footer-contact">
+                    <a href="mailto:ayshanasrin2606@gmail.com" class="contact-link">
+                        <i class="fa-solid fa-envelope"></i> ayshanasrin2606@gmail.com
+                    </a>
+                    <a href="tel:+919514583596" class="contact-link">
+                        <i class="fa-solid fa-phone"></i> +91 8148102606
+                    </a>
+                    <p class="location-link">
+                        <i class="fa-solid fa-map-marker-alt"></i> Ramanathapuram, Tamil Nadu, India
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <h4 class="footer-section-title">Follow Me</h4>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/aysha-nasrin-a5a5b32b0/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/aysha-nasrin26" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider"></div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p class="footer-copyright">&copy; 2026 Aysha Nasrin. Designed & Built with <i class="fa-solid fa-heart"></i> using HTML, CSS & Vanilla JS.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="#" class="footer-bottom-link">Terms of Service</a>
+                    <span class="separator">•</span>
+                    <a href="#contact" class="footer-bottom-link">Contact Me</a>
+                </div>
+            </div>
+            <button class="back-to-top" id="backToTop" aria-label="Back to Top" title="Back to Top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </button>
+        </div>
+    </div>
+</footer>
+<style>
+.footer {
+    background: linear-gradient(135deg, rgba(20, 20, 35, 0.95) 0%, rgba(25, 25, 45, 0.95) 100%);
+    border-top: 1px solid rgba(233, 213, 161, 0.1);
+    padding: 60px 0 20px;
+    color: #ccc;
+    font-size: 14px;
+}
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.footer-brand {
+    grid-column: span 1;
+}
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+.footer-logo:hover {
+    color: #E9D5A1;
+}
+.logo-accent {
+    color: #E9D5A1;
+}
+.footer-tagline {
+    font-weight: 600;
+    color: #E9D5A1;
+    margin: 8px 0;
+    font-size: 13px;
+}
+.footer-description {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #aaa;
+    margin-top: 8px;
+}
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+.footer-section-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 13px;
+}
+.footer-links a:hover {
+    color: #E9D5A1;
+    padding-left: 4px;
+}
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.contact-link,
+.location-link {
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contact-link:hover {
+    color: #E9D5A1;
+}
+.location-link {
+    cursor: default;
+}
+.location-link i {
+    color: #E9D5A1;
+}
+.footer-social {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+.social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(233, 213, 161, 0.1);
+    color: #E9D5A1;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(233, 213, 161, 0.2);
+}
+.social-link:hover {
+    background: #E9D5A1;
+    color: #1a1a2e;
+    transform: translateY(-3px);
+}
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(233, 213, 161, 0.2), transparent);
+    margin: 30px 0;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-bottom-content {
+    flex: 1;
+}
+.footer-copyright {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 8px;
+}
+.footer-copyright i {
+    color: #E9D5A1;
+}
+.footer-bottom-links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+.footer-bottom-link {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-bottom-link:hover {
+    color: #E9D5A1;
+}
+.separator {
+    color: #555;
+}
+.back-to-top {
+    width: 40px;
+    height: 40px;
+    background: #E9D5A1;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.back-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(233, 213, 161, 0.3);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-bottom-content {
+        width: 100%;
+    }
+    .social-links {
+        justify-content: center;
+    }
+}
+</style>
+
+
+    <!-- RESUME PREVIEW MODAL -->
+    <div class="modal-overlay" id="resumeModal">
+        <div class="modal-container glass-card">
+            <button class="modal-close" id="closeResumeModal" aria-label="Close Resume Modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="resume-header">
+                <div class="resume-title-block">
+                    <h2>Aysha Nasrin</h2>
+                    <p class="text-accent">BCA Rank 1 Gold Medalist | Backend & Frontend Developer</p>
+                </div>
+                <button class="btn btn-primary btn-sm" id="downloadResumeBtn">
+                    <i class="fa-solid fa-download"></i> Download Resume PDF
+                </button>
+            </div>
+            
+            <div class="resume-body">
+                <div class="resume-section">
+                    <h3><i class="fa-solid fa-user"></i> Professional Summary</h3>
+                    <p>
+                        High-achieving Computer Applications graduate (University Rank 1 Gold Medalist, CGPA 8.5/10) 
+                        with strong technical expertise in Python, FastAPI, Flask, JavaScript, SQL, and Web Architecture. 
+                        Proven track record of building production-ready APIs, AI chatbot systems, and responsive web platforms.
+                    </p>
+                </div>
+
+                <div class="resume-section">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                    <p><strong>Bachelor of Computer Applications (BCA)</strong> | Graduated 2026</p>
+                    <p class="text-accent">🥇 University Gold Medalist & Rank 1 Holder (CGPA 8.5 / 10)</p>
+                </div>
+
+                <div class="resume-section">
+                    <h3><i class="fa-solid fa-code"></i> Core Competencies</h3>
+                    <p><strong>Backend:</strong> Python, JSON, FastAPI, Flask, RESTful APIs, MySQL, SQL Queries</p>
+                    <p><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), Modern Responsive Design</p>
+                    <p><strong>Tools:</strong> Git, GitHub, VS Code, Canva, Postman</p>
+                </div>
+
+                <div class="resume-section">
+                    <h3><i class="fa-solid fa-diagram-project"></i> Key Projects</h3>
+                    <p><strong>• TaskFlow Productivity App:</strong> Python task management to use FastAPI, React, MySQL, SQLAlchemy, JWT Authentication, Pytest, Swagger API Full-Stack application.</p>
+                    <p><strong>• AI Chatbot for College Management:</strong> Built with Python, Flask, MySQL & JS.</p>
+                    <p><strong>• E-Commerce Anime Store & Business Web Platforms:</strong> Modern HTML/CSS/JS applications.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PROJECT DETAILS MODAL -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-container glass-card" id="projectModalContent">
+            <button class="modal-close" id="closeProjectModal" aria-label="Close Project Modal"><i class="fa-solid fa-xmark"></i></button>
+            <div id="projectModalDynamic"></div>
+        </div>
+    </div>
+
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-container" id="toastContainer"></div>
+
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
